@@ -11,9 +11,10 @@ jobs:
     steps:
         - name: checkout repo
         uses: actions/Checkout@v3
-
+        
         - name: install python
-        uses: action/setup-python
+        uses: actions/setup-python@v4.6.0
+
 
         - name: install requirements
         run: pip install -r requirements.txt
