@@ -1,0 +1,13 @@
+name: My Example Workflow
+on:
+    pull_request:
+        branch:
+            - main
+# What should this do?
+jobs: 
+    Example workflow:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: say hello
+            run: echo 'hello world'
